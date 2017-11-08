@@ -16,6 +16,7 @@ public class CategoryImages implements Serializable{
 	private String image100;
 	private String image200;	
 	private String gameUrl;
+	private String categoryName;
 	public long getId() {
 		return id;
 	}
@@ -64,6 +65,12 @@ public class CategoryImages implements Serializable{
 	}
 	public void setImage200(String image200) {
 		this.image200 = image200;
+	}
+	public String getCategoryName() {
+		return categoryName;
+	}
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
 	}
 	
 	}

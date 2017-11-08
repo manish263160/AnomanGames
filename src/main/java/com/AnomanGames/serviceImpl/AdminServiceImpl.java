@@ -21,14 +21,34 @@ public class AdminServiceImpl implements AdminService {
 	
 	@Override
 	public List<Categories> getAllCategories() {
-		// TODO Auto-generated method stub
-		return adminDao.getAllCategories();
+
+		List<Categories> list= adminDao.getAllCategories();
+		list.forEach((ll) -> {
+			if(ll.getBnrImgLocation() != null) {
+				String loc=ll.getBnrImgLocation();
+				ll.setBnrImgLocation(loc+".png");
+				ll.setBnrImgLocation100(loc+"_100.png");
+				ll.setBnrImgLocation200(loc+"_200.png");				
+			}
+		});
+		logger.info("category list size=="+list.size());
+		return list;
 	}
 
 	@Override
 	public List<CategoryImages> getAllCategoryImages() {
-		// TODO Auto-generated method stub
-		return adminDao.getAllCategoryImages();
+		List<CategoryImages> list = adminDao.getAllCategoryImages();
+		
+		list.forEach((ll) -> {
+			if(ll.getImageLocation() != null) {
+				String loc=ll.getImageLocation();
+				ll.setImageLocation(loc +".png");
+				ll.setImage100(loc +"_100.png");
+				ll.setImage200(loc +"_200.png");
+			}
+		});
+		logger.info("CategoryImages list size=="+list.size());
+		return list;
 	}
 	
 
