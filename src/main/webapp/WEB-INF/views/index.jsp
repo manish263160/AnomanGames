@@ -35,11 +35,9 @@ Users can play un-limited premium quality games by paying an affordable fee thro
 
   </head>
 <body>
-    <header style="background-color:#008275">
-  <div class="header-left" style="background-color:#008275">
-    <div class="share">
-           <a href="#" data-toggle="modal" data-target="#myModal" >&nbsp;&nbsp;<i class="fa fa-bars" aria-hidden="true" style="color:#04eef9"></i></a>
-      </div>
+    <header style="background-color:#884d7e">
+  <div class="header-left" style="background-color:#422940">
+    
     <div class="modal left fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
     <div class="modal-dialog" role="document">
       <div class="modal-content" style="background-color: #74dbe0">
@@ -79,8 +77,14 @@ Users can play un-limited premium quality games by paying an affordable fee thro
   </div><!-- modal -->
 
      
-  &nbsp;&nbsp;<a href="ShowContent"><img src="http://103.16.141.79:8185/Realgames/images/Gameover.png"  style="width: 60px;height: 15px" onmouseover="this.i class="fa fa-home"
-     onmouseout="this.src='http://103.16.141.79:8185/Realgames/images/Gameover.png';"></a>
+  &nbsp;&nbsp;
+     <!-- href="ShowContent" -->
+  <a href="#" data-toggle="modal" data-target="#myModal" style="text-decoration: none;"><i class="fa fa-bars" aria-hidden="true" style="color:#04eef9"></i>
+  &nbsp;&nbsp;
+  <img src="http://103.16.141.79:8185/Realgames/images/Gameover.png"  style="width: 60px;height: 15px" onmouseover="this.i class="fa fa-home"
+     onmouseout="this.src='http://103.16.141.79:8185/Realgames/images/Gameover.png';">
+  </a>
+  
   </div><!--header-left-->
 
   <div class="share">
@@ -99,13 +103,13 @@ Users can play un-limited premium quality games by paying an affordable fee thro
 </header>
 
 
-<banner style="background-color:#ccfffb;" >
+<banner style="background-color:#ab662a;" >
 <div id="owl-demo" class="owl-carousel owl-theme" style="background-color:#ccfffb;">
 <c:forEach items="${listCategory }" var="cat">
 <div class="item">
 <form action="ContentDetail.jsp" method="POST">
     <input type="hidden" name="content_id" value="145" />
-    <a  href="${cat.bnrGameUrl }"  style="background-color:#adc9f7;">
+    <a  href="${cat.bnrGameUrl }"  style="background-color:#c1cec8;">
     <img src="${ano}/${cat.bnrImgLocation200 }"  class="img-responsive" /></a>
 </form>
 </div>
@@ -139,7 +143,7 @@ Users can play un-limited premium quality games by paying an affordable fee thro
 
 <c:forEach items="${mapCatImg}" var="map" varStatus="status">
 <div class="grayBg"  style="background-color:#ccfffb;"  style="background-color:#ccfffb;">
-  <div class="head-blk" style="background-color:#02f2e2; border-style: inset ;">
+  <div class="head-blk" style="background-color:#fff; border-style: inset ;">
     <div class="left-text">
       <h4 style="color:#028704;" >${map.key }</h4>
           </div>
@@ -159,7 +163,7 @@ Users can play un-limited premium quality games by paying an affordable fee thro
 
                          <form action="ContentDetail.jsp" method="POST" >
                          <input type="hidden" name="content_id" value="202" />
-                         <a  href="${mapval.gameUrl}"  style="background-color:#adc9f7;">
+                         <a  href="${mapval.gameUrl}"  style="background-color:#c1cec8;">
                          <img src="${ano }/${mapval.imageLocation}"  height="85" width="85"/><h5 >${mapval.contentName }</h5><span class="green" >3.8 &#9733 </span></a>
                          </form>
 			</li>
@@ -172,7 +176,7 @@ Users can play un-limited premium quality games by paying an affordable fee thro
 <%-- <c:if test="${status.index eq 0 }"> --%>
 <form action="ContentDetail.jsp" method="POST">
     <input type="hidden" name="content_id" value="220" />
-    <a  href="${map.value[0].gameUrl }"  style="background-color:#adc9f7;">
+    <a  href="${map.value[0].gameUrl }"  style="background-color:#c1cec8;">
 <banner><img src="${ano }/${map.value[0].image200 }"></banner></a>
 </form>
 <%-- </c:if> --%>
@@ -184,8 +188,8 @@ Users can play un-limited premium quality games by paying an affordable fee thro
 
 
 <div style="background-color:#d6fffb"><font size="1"><center><strong>&copy; Anoman Digital Media Pvt. Ltd. 2017</strong></center></font></div>
-<div class="head-bar" style="background-color:#03998e;">
-<span style="background-color:#03998e;"><a href="about.jsp" ALT="profile">About Us</a></span>
+<div class="head-bar" style="background-color:#ee6e73;">
+<span style="background-color:#ee6e73;"><a href="about.jsp" ALT="profile">About Us</a></span>
 
 <!--
 <span><a href="#"></a></span>
@@ -194,7 +198,7 @@ Users can play un-limited premium quality games by paying an affordable fee thro
 <span style="background-color:#016059;"><a href="privacy.jsp" ALT="profile">Privacy</a></span>
 
 
-<span style="background-color:#03998e;"><a href="help.jsp" ALT="profile">Help</a></span>
+<span style="background-color:#ee6e73;"><a href="help.jsp" ALT="profile">Help</a></span>
 
 </div><!--row-->
 
