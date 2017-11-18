@@ -149,7 +149,7 @@ banner img{ background-size: cover; width: 50%; margin-bottom: 2%}
 
 .grayBg{background: transparent; padding: 5px;}
 .head-blk{display: table; width:100%;}
-.head-blk.centered{text-align: center;}
+.head-blk.centered{text-align: center; margin-top: 5rem;}
 .left-text{float: left;}
 .right-text{float: right;}
 .right-text a{color: #3da206; font-weight:600; text-decoration: none; text-transform:uppercase;}
