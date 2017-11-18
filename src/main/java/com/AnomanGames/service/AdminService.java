@@ -11,5 +11,7 @@ public interface AdminService {
 
 	List<CategoryImages> getAllCategoryImages();
 
+	List<CategoryImages> getCategoryWiseData(String catId);
+
 	
 }

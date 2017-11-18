@@ -10,6 +10,7 @@ import java.util.Set;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -69,6 +70,19 @@ public class AppController {
 		model.addObject("listCategoryImages", listCategoryImages);
 		model.addObject("mapCatImg", mapCatImg);
 		model.setViewName("index");
+		return model;
+	}
+	
+	@RequestMapping(value = { "/category/{catId}/{catName}" }, method = { RequestMethod.GET })
+	public ModelAndView categoryPage(@PathVariable String catId , @PathVariable String catName) {
+		logger.info("===="+catId+"  catName =="+catName);
+		
+		ModelAndView model = new ModelAndView();
+		List<CategoryImages> categoryWiseImages =adminService.getCategoryWiseData(catId);
+		model.addObject("categoryWiseImages", categoryWiseImages);
+		model.addObject("catId", catId);
+		model.addObject("catName", catName);
+		model.setViewName("categoryPage");
 		return model;
 	}
 

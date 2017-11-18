@@ -1,6 +1,11 @@
 /*----------------slider-------------*/
 $(document).ready(function($) {
-   $(".owl-example").owlCarousel();
+   $(".owl-example").owlCarousel({
+	   
+		  loop:true,
+	      items : 5, 
+	      
+	  });
 });
 
 /* Banner Slider*/
@@ -35,14 +40,14 @@ $(document).ready(function() {
  
   $("#owl-demo").owlCarousel({
  
-      navigation : false, // Show next and prev buttons
- 
+	  loop:true,
+	  nav : true, // Show next and prev buttons
       slideSpeed : 300,
-      paginationSpeed : 400,
- 
-      items : 1, 
-      itemsDesktop : false,
-      itemsDesktopSmall : false,
+      paginationSpeed : 400, 
+      items : 3, 
+      margin :10,
+      itemsDesktop : true,
+      itemsDesktopSmall : true,
       itemsTablet: false,
       itemsMobile : true
  
@@ -174,5 +179,14 @@ $(document).ready(function() {
         });
 });
 
-
+function showImage(url, id , contentName , gameUrl){
+	console.log("======",url , " ===",id);
+	var location ="${ano}";
+	if(url && id){
+//		console.log("000000----",location,"/",url);
+		$("#largeImg_"+id).attr("src", url );
+		$("#anchor_"+id).attr("href", gameUrl );
+		$("#dynmcLabel_"+id).text(contentName);
+	}
+}
 

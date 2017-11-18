@@ -50,6 +50,22 @@ public class AdminServiceImpl implements AdminService {
 		logger.info("CategoryImages list size=="+list.size());
 		return list;
 	}
+
+	@Override
+	public List<CategoryImages> getCategoryWiseData(String catId) {
+
+		List<CategoryImages> list = adminDao.getCategoryWiseData(catId);
+		list.forEach((ll) -> {
+			if(ll.getImageLocation() != null) {
+				String loc=ll.getImageLocation();
+				ll.setImageLocation(loc +".png");
+				ll.setImage100(loc +"_100.png");
+				ll.setImage200(loc +"_200.png");
+			}
+		});
+		logger.info("getCategoryWiseData list size=="+list.size());
+		return list;
+	}
 	
 
 

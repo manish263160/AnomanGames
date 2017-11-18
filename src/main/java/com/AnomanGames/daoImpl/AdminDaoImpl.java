@@ -29,6 +29,13 @@ public class AdminDaoImpl extends AnomanJdbcDaoSupport implements AdminDao {
 		List<CategoryImages> list = getJdbcTemplate().query(query, new BeanPropertyRowMapper<CategoryImages>(CategoryImages.class));
 		return list;
 	}
+
+	@Override
+	public List<CategoryImages> getCategoryWiseData(String catId) {
+		String query = "SELECT cat.name as category_name,catimg.* FROM anoman.category_images catimg left join categories cat on catimg.category_id=cat.id where catimg.category_id =?;";
+		List<CategoryImages> list = getJdbcTemplate().query(query, new BeanPropertyRowMapper<CategoryImages>(CategoryImages.class) ,catId);
+		return list;
+	}
 	
 	
 

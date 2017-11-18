@@ -11,6 +11,8 @@ public interface AdminDao {
 
 	List<CategoryImages> getAllCategoryImages();
 
+	List<CategoryImages> getCategoryWiseData(String catId);
+
 	
 
 }

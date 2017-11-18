@@ -42,7 +42,7 @@
 
 
 
-body { margin: 0px; padding: 0px; font-family: 'Roboto', sans-serif; font-size:14px; background:#f1f1f1; overflow-x: hidden;}
+body { margin: 0px; padding: 0px; font-family: 'Roboto', sans-serif; font-size:14px; background:#eff5f7; overflow-x: hidden;}
 *:focus { outline: none;}
 ::-moz-focus-inner { border: 0; padding: 0;}
 ::-moz-selection { color: #fff; background: #ec1b2e;}
@@ -65,7 +65,14 @@ form {
     margin-top: 0em;
 }
 /*-------------------------header--------------------*/
-header{background:#323232; padding:0 10px; line-height: 50px; display: table; width: 100%;}
+header {
+	background: #323232;
+	padding: 0 0px;
+	line-height: 50px;
+	display: table;
+	width: 100%;
+}
+
 header i{color: #ffffff;}
 
 .header-left{float: left;}
@@ -92,7 +99,37 @@ header i{color: #ffffff;}
 .modal.left .modal-header h4{color: #ffffff;}
 .close.close-btn { font-weight:normal; color: #ffffff; opacity: 10;}
 
-banner img{ background-size: cover; width: 100%;}
+banner{
+	 vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.headermain{
+	    background-color: #009688;
+    /* position: absolute; */
+    overflow: hidden;
+    /* background-color: #333; */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999999;
+}
+.dynamicLabel{
+	display: block;
+	text-align: center;
+}
+
+.dynamicLabel{
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+hr{
+	    border-top: 1px solid #908989;
+	    border-bottom: 1px solid #908989;
+}
+banner img{ background-size: cover; width: 50%; margin-bottom: 2%}
 
 .game-info{ padding:5px; width: 100%; display: block; background: #ffffff;}
 .game-info ul{margin: 0; padding:0;}
@@ -110,7 +147,7 @@ banner img{ background-size: cover; width: 100%;}
 .btn.btn-sports{background: #9e00e7;}
 .btn.btn-strategy{background: #734700;}
 
-.grayBg{background: #f1f1f1; padding: 5px;}
+.grayBg{background: transparent; padding: 5px;}
 .head-blk{display: table; width:100%;}
 .head-blk.centered{text-align: center;}
 .left-text{float: left;}
@@ -424,3 +461,6 @@ img.paytm {
     }
 
 
+.list-grid{
+	height: 30%;
+}
