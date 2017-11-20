@@ -44,7 +44,7 @@ $(document).ready(function() {
 	  nav : true, // Show next and prev buttons
       slideSpeed : 300,
       paginationSpeed : 400, 
-      items : 3, 
+      items : 1, 
       margin :10,
       itemsDesktop : true,
       itemsDesktopSmall : true,
