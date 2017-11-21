@@ -55,7 +55,7 @@
 	<div class="grayBg">
 	  <div class="head-blk" >
 	    <div class="left-text">
-	      <h4 style="color:#3e383d;" >${map.key }</h4>
+	      <h4 style="color:#3e383d;" ><a href="${ano}//category/${map.value[0].categoryId}/${map.key}" >${map.key }</a></h4>
 	          </div>
 				<div class="right-text">
 					<form action="more" method="POST">

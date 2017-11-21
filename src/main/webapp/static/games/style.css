@@ -129,7 +129,7 @@ hr{
 	    border-top: 1px solid #908989;
 	    border-bottom: 1px solid #908989;
 }
-banner img{ background-size: cover; width: 50%; margin-bottom: 2%}
+banner img{ background-size: cover; width: 100%; margin-bottom: 2%}
 
 .game-info{ padding:5px; width: 100%; display: block; background: #ffffff;}
 .game-info ul{margin: 0; padding:0;}

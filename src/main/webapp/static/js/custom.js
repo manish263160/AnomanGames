@@ -3,7 +3,7 @@ $(document).ready(function($) {
    $(".owl-example").owlCarousel({
 	   
 		  loop:true,
-	      items : 5, 
+	      items : 3, 
 	      
 	  });
 });

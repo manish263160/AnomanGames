@@ -42,7 +42,9 @@
 	     
 	  &nbsp;&nbsp;
 	     <!-- href="ShowContent" -->
-	  <a href="#" data-toggle="modal" data-target="#myModal" style="text-decoration: none;"><i class="fa fa-bars" aria-hidden="true" style="color:#04eef9"></i>
+	     <!-- with menu that comment on 21 nov  -->
+<!-- 	     <a href="#" data-toggle="modal" data-target="#myModal" style="text-decoration: none;"><i class="fa fa-bars" aria-hidden="true" style="color:#04eef9"></i> -->
+     <a href="#"  style="text-decoration: none;">
 	  &nbsp;&nbsp;
 	  <img src="http://103.16.141.79:8185/Realgames/images/Gameover.png"  style="width: 60px;height: 15px" onmouseover="this.i class="fa fa-home"
 	     onmouseout="this.src='http://103.16.141.79:8185/Realgames/images/Gameover.png';">
@@ -50,12 +52,13 @@
 	  
 	  </div><!--header-left-->
 	
-	  <div class="share">
+	<!-- search bar that comment on 21 nov  -->
+	  <!-- <div class="share">
 		<form method="post" action="/search" id="search">
 	  	<input type="text" name="game_name" size="40" placeholder="search..."  required="required" pattern="[A-Za-z0-9]{1,20}" style="background-color:#f9f9f9; color: black;"/>
 	        <a href="#" onclick="return validateSearch() ; this.parentNode.submit()"><i class="fa fa-search" style="font-style: bold">&nbsp;&nbsp;</i></a>
 		</form>
-	  </div>
+	  </div> -->
 	  
 	  
 	<!--
