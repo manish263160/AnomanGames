@@ -36,5 +36,6 @@
 </ul>
 
 <a href="${ano }/"> Back</a>
+<div style="background-color:#d6fffb"><font size="1"><center><strong>&copy; Anoman Digital Media Pvt. Ltd. 2017</strong></center></font></div>
 </body>
 </html>

@@ -44,7 +44,8 @@
 	     <!-- href="ShowContent" -->
 	     <!-- with menu that comment on 21 nov  -->
 <!-- 	     <a href="#" data-toggle="modal" data-target="#myModal" style="text-decoration: none;"><i class="fa fa-bars" aria-hidden="true" style="color:#04eef9"></i> -->
-     <a href="#"  style="text-decoration: none;">
+     <a href="${ano}/"  style="text-decoration: none;">
+     <i class="fa fa-home" aria-hidden="true" style="color:#04eef9"></i>
 	  &nbsp;&nbsp;
 	  <img src="http://103.16.141.79:8185/Realgames/images/Gameover.png"  style="width: 60px;height: 15px" onmouseover="this.i class="fa fa-home"
 	     onmouseout="this.src='http://103.16.141.79:8185/Realgames/images/Gameover.png';">

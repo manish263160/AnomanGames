@@ -42,7 +42,7 @@
 
 
 
-body { margin: 0px; padding: 0px; font-family: 'Roboto', sans-serif; font-size:14px; background:#eff5f7; overflow-x: hidden;}
+body { margin: 0px; padding: 0px; font-family: 'Roboto', sans-serif; font-size:14px; background:lightblue; overflow-x: hidden;}
 *:focus { outline: none;}
 ::-moz-focus-inner { border: 0; padding: 0;}
 ::-moz-selection { color: #fff; background: #ec1b2e;}
@@ -123,13 +123,14 @@ banner{
 .dynamicLabel{
 	text-transform: uppercase;
 	font-size: 30px;
+	margin-top: 2%;
 }
 
 hr{
 	    border-top: 1px solid #908989;
 	    border-bottom: 1px solid #908989;
 }
-banner img{ background-size: cover; width: 100%; margin-bottom: 2%}
+banner img{ background-size: cover; width: 100%; margin-bottom: 2%; height: 75%;}
 
 .game-info{ padding:5px; width: 100%; display: block; background: #ffffff;}
 .game-info ul{margin: 0; padding:0;}
@@ -429,7 +430,7 @@ img.paytm {
 #owl-demo .item img{
     display: block;
     width: 100%;
-    height: auto;
+    height: 75%;
 }
 /*--------------------------------------------Searchning Bar-------------------------------------------*/
 #search {
