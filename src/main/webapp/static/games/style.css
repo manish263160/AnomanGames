@@ -122,8 +122,9 @@ banner{
 
 .dynamicLabel{
 	text-transform: uppercase;
-	font-size: 30px;
+	font-size: 25px;
 	margin-top: 2%;
+	color: purple;
 }
 
 hr{
@@ -157,7 +158,7 @@ banner img{ background-size: cover; width: 100%; margin-bottom: 2%; height: 75%;
 .head-blk h4{margin: 0; font-weight:600; font-size: 16px}
 .head-blk .quote{text-align: center; font-size:17px; margin-top:10px; margin-bottom:20px; border: solid 1px red; }
 
-ul.list-grid{ margin: 0; padding: 0;}
+ul.list-grid{ margin: 0; padding-top: 3rem;}
 ul.list-grid li{ float: left; margin:0 5px 0 0; width: 100%; border: solid 1px transparent;}
 ul.list-grid.page{ display: table;width: 100%;}
 ul.list-grid.page li{ width: 31.4%; margin-bottom:7px; margin-left: 1px;}
