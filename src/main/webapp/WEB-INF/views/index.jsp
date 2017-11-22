@@ -13,8 +13,8 @@
 	    <jsp:include page="fragments/header.jsp"></jsp:include>
 	
 	
-	<banner style="background-color:#fffff;" >
-	<div id="owl-demo" class="owl-carousel owl-theme" style="background-color:#f9f9f9; margin-top: 25px">
+	<banner style="background-color:lightyellow;" >
+	<div id="owl-demo" class="owl-carousel owl-theme" style="background-color:lightyellow; margin-top: 5.7rem">
 	<c:forEach items="${listCategory }" var="cat">
 	<div class="item" >
 	<form action="ContentDetail.jsp" method="POST">
@@ -73,7 +73,7 @@
 	
 	                         <form action="ContentDetail.jsp" method="POST" onmouseover="showImage('${ano }/${mapval.image200}','${status.count }','${mapval.contentName }' ,'${mapval.gameUrl }');">
 	                         <input type="hidden" name="content_id" value="202" /> 
-	                         <a href="${mapval.gameUrl}" style="background-color: #c1cec8;"> 
+	                         <a href="${mapval.gameUrl}" style="background-color: white;"> 
 	                         <img src="${ano }/${mapval.imageLocation}" height="85" width="85" onerror="this.src='http://via.placeholder.com/100x100';" />
 								<h5>${mapval.contentName }</h5>
 										<span class="green">3.8 &#9733 </span></a>
@@ -89,7 +89,7 @@
 	<label id="dynmcLabel_${status.count }" class="dynamicLabel">${map.value[0].contentName }</label>
 	    <a  href="${map.value[0].gameUrl }" id="anchor_${status.count }" style="background-color:#c1cec8;">
 	<banner>
-	<img src="${ano }/${map.value[0].image200 }" id="largeImg_${status.count }" onerror="this.src='http://via.placeholder.com/100x100';">
+	<img src="${ano }/${map.value[0].image200 }" style="width: 100%; height: 35%;" id="largeImg_${status.count }" onerror="this.src='http://via.placeholder.com/100x100';">
 	</banner></a>
 	</div>
 	</c:forEach>
