@@ -54,8 +54,8 @@
 	  </div><!--header-left-->
 	  
 	  <!-- this is the icon for the home icon -->
-	  <i class="fa fa-home" aria-hidden="true" id="homeicon" ></i>
-	
+	<a href="${ano}/"  style="text-decoration: none;">  <i class="fa fa-home" aria-hidden="true" id="homeicon" ></i>
+	</a>
 	<!-- search bar that comment on 21 nov  -->
 	  <!-- <div class="share">
 		<form method="post" action="/search" id="search">

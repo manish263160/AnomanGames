@@ -22,7 +22,7 @@
 			  
                          <form action="ContentDetails" method="POST">
                          <input type="hidden" name="content_id" value="195" />
-                         <a href="${mapval.gameUrl}" style="background-color: #c1cec8;"> <img
+                         <a href="${mapval.gameUrl}" style="background-color: white;"> <img
 										src="${ano }/${mapval.imageLocation}" 
 										onerror="this.src='http://via.placeholder.com/100x100';" />
 									<h5>${mapval.contentName }</h5>
