@@ -42,7 +42,7 @@
 
 
 
-body { margin: 0px; padding: 0px; font-family: 'Roboto', sans-serif; font-size:14px; background:lightblue; overflow-x: hidden;}
+body { margin: 0px; padding: 0px; font-family: 'Roboto', sans-serif; font-size:14px; background:lightblue ; overflow-x: hidden;}
 *:focus { outline: none;}
 ::-moz-focus-inner { border: 0; padding: 0;}
 ::-moz-selection { color: #fff; background: #ec1b2e;}
