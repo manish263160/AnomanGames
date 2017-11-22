@@ -30,7 +30,6 @@
                          </form>
  </li>
  </c:forEach>
-
   
 
 </ul>

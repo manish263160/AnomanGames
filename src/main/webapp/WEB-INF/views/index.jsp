@@ -99,7 +99,7 @@
 	
 	
 	
-	<div style="background-color:#d6fffb"><font size="1"><center><strong>&copy; Anoman Digital Media Pvt. Ltd. 2017</strong></center></font></div>
+	<div style="background-color:#d6fffb"><font size="1"> <center><strong>&copy; Anoman Digital Media Pvt. Ltd. 2017</strong></center></font></div>
 	<!-- <div class="head-bar" style="background-color:#ee6e73;">
 	<span style="background-color:#ee6e73;"><a href="about.jsp" ALT="profile">About Us</a></span>
 	
